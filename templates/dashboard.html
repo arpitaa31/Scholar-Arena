@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholar Arena Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>SCHOLAR<br>ARENA</h2>
+        </div>
+
+        <ul>
+            <li class="active">🏠 Dashboard</li>
+            <li>📚 Battles</li>
+            <li>🏆 Leaderboard</li>
+            <li>🎯 Missions</li>
+            <li>⚙ Settings</li>
+        </ul>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <div class="top-bar">
+
+            <div>
+                <h1>Good Evening, {{ user.username }} 👋</h1>
+                <p>Ready to conquer today's challenges?</p>
+            </div>
+
+            <div class="profile">
+                <div class="profile-pic">A</div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Stats -->
+        <div class="stats">
+
+            <div class="card xp-card">
+                <h3>⚡ XP</h3>
+                <h1>{{ user.xp }}</h1>
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
+                <p>72% to next level</p>
+            </div>
+
+            <div class="card">
+                <h3>🏆 Level</h3>
+                <h1>{{ user.level }}</h1>
+            </div>
+
+            <div class="card">
+                <h3>🔥 Streak</h3>
+                <h1>5 Days</h1>
+            </div>
+
+        </div>
+
+
+        <div class="bottom-grid">
+
+            <!-- Recent Battles -->
+            <div class="card large-card">
+
+                <h2>📚 Recent Battles</h2>
+
+                <div class="battle">
+                    <span>Physics Quiz</span>
+                    <span>+20 XP</span>
+                </div>
+
+                <div class="battle">
+                    <span>Chemistry Challenge</span>
+                    <span>+15 XP</span>
+                </div>
+
+                <div class="battle">
+                    <span>Math Arena</span>
+                    <span>+30 XP</span>
+                </div>
+
+            </div>
+
+
+            <!-- Leaderboard -->
+            <div class="card">
+
+                <h2>🏆 Leaderboard</h2>
+
+                <div class="rank">🥇 Arpitaa</div>
+                <div class="rank">🥈 Rahul</div>
+                <div class="rank">🥉 Aditi</div>
+
+            </div>
+
+
+            <!-- Daily Missions -->
+            <div class="card">
+
+                <h2>🎯 Daily Missions</h2>
+
+                <p>☐ Complete 1 Quiz</p>
+                <p>☐ Revise Chemistry</p>
+                <p>☐ Earn 50 XP</p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

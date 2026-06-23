@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholar Arena</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+            <div class="logo">
+       <img src="{{ url_for('static', filename='images/logo.png') }}">
+    </div>
+
+        <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>How It Works</li>
+        </ul>
+
+        <div class="buttons">
+           <a href="/login" class="nav-btn login-btn">
+            Login
+            </a>
+
+            <a href="/signup" class="nav-btn signup-btn">
+             Sign Up
+                </a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+    <h1>
+        Turn Studying Into A <span>Battle Royale</span>
+    </h1>
+
+    <p>
+        Compete with friends, earn XP, climb leaderboards,
+        and become the ultimate Study Legend.
+    </p>
+
+    <div class="hero-buttons">
+<a href="/signup">
+
+<button class="start-btn">
+
+    Sign Up Free
+
+</button>
+
+</a>
+        <button class="learn-btn">
+            Learn More
+        </button>
+
+    </div>
+
+    <div class="scroll-indicator">
+        ↓ Scroll to Explore ↓
+    </div>
+
+</section>
+
+<section class="features">
+
+    <h2>Why Scholar Arena?</h2>
+
+    <div class="feature-container">
+
+        <div class="card">
+            <h3>📚 Study Sessions</h3>
+            <p>Start timers and stay focused on your goals.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Earn XP</h3>
+            <p>Every minute studied gives XP and levels you up.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏆 Leaderboards</h3>
+            <p>Compete with friends and climb to #1.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔥 Streaks</h3>
+            <p>Build consistency and become a Study Legend.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="how-it-works">
+    <div class="space-bg">
+
+    <div class="star star1"></div>
+    <div class="star star2"></div>
+    <div class="star star3"></div>
+    <div class="star star4"></div>
+
+    <div class="planet planet1"></div>
+    <div class="planet planet2"></div>
+
+</div>
+    <h2>How It Works</h2>
+
+    <div class="timeline">
+
+        <div class="step">
+            <div class="circle">1</div>
+            <h3>Create Account</h3>
+            <p>Create your profile and choose your avatar.</p>
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="step">
+            <div class="circle">2</div>
+            <h3>Join Battle Room</h3>
+            <p>Invite friends or join an existing room.</p>
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="step">
+            <div class="circle">3</div>
+            <h3>Study</h3>
+            <p>Start a timer and focus on your goals.</p>
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="step">
+            <div class="circle">4</div>
+            <h3>Earn XP</h3>
+            <p>Every minute studied gives XP.</p>
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="step">
+            <div class="circle">5</div>
+            <h3>Become #1</h3>
+            <p>Climb the leaderboard and become a Study Legend.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="arena-preview">
+
+    <h2>Live Arena Preview</h2>
+
+    <div class="leaderboard-card">
+
+        <div class="arena-header">
+            🏆 Study Arena #128
+        </div>
+
+        <div class="player">
+            <span>🥇 Mishthi</span>
+            <span>540 XP</span>
+        </div>
+
+        <div class="player">
+            <span>🥈 Rahul</span>
+            <span>470 XP</span>
+        </div>
+
+        <div class="player">
+            <span>🥉 Ayesha</span>
+            <span>420 XP</span>
+        </div>
+
+        <div class="player">
+            <span>🏅 Max </span>
+            <span>380 XP</span>
+        </div>
+
+        <div class="notification">
+            ⚠ Rahul just passed Ayesha!
+        </div>
+
+        <div class="room-code">
+            🔥 Room Code: ABC123
+        </div>
+
+        <button class="join-btn">
+            JOIN BATTLE
+        </button>
+
+    </div>
+
+</section>
+
+<section class="footer-section">
+
+    <div class="feedback">
+
+        <h2>What Students Say</h2>
+
+        <div class="reviews">
+
+            <div class="review-card">
+                ⭐⭐⭐⭐⭐
+                <p>
+                    "Scholar Arena made studying fun again."
+                </p>
+            </div>
+
+            <div class="review-card">
+                ⭐⭐⭐⭐⭐
+                <p>
+                    "Competing with friends is addictive 😂"
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <h1>⚔ SCHOLAR ARENA</h1>
+
+        <p>Study. Compete. Conquer.</p>
+
+        <div class="footer-links">
+
+            <div>
+                <h3>Product</h3>
+                <a href="">Features</a>
+                <a href="">Leaderboard</a>
+                <a href="">Study Rooms</a>
+            </div>
+
+            <div>
+                <h3>Resources</h3>
+                <a href="">FAQ</a>
+                <a href="">Contact</a>
+            </div>
+
+            <div>
+                <h3>Community</h3>
+                <a href="">Instagram</a>
+                <a href="">YouTube</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            Forged for students by students!
+
+            <br><br>
+
+            © 2026 Scholar Arena
+
+        </div>
+
+    </footer>
+
+</section>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
